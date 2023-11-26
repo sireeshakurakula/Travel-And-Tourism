@@ -1,0 +1,96 @@
+<h2>Booking List</h2>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>LastName</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Password</th>
+            <th>Gender</th>
+            <th>Actions</th>
+             </tr>
+    </thead>
+<tbody>
+    <tr *ngFor="let employee of employees">
+         <td>{{employee.firstname}}</td>
+         <td>{{employee.lastname}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.contact}}</td>
+        <td>{{employee.password}}</td>
+        <td>{{employee.gender}}</td>
+        <td>
+          <button (click)="updateEmployee(employee.id)" class="btn btn-info">Update</button>
+          <button (click)="deleteEmployee(employee.id)" class="btn btn-danger"style="margin: left 80px;">Delete</button>
+          <button (click)="employeeDetailes(employee.id)" class="btn btn-info"style="margin: left 80px;">View</button>
+
+        </td>
+        
+
+    </tr>
+</tbody>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form (ngSubmit)="submitForm()">
+<div class="form-group">
+    <label>FirstName:</label>
+    <input type="text" class="form-control" id="firstname"
+    [(ngModel)]="student.firstname" name="firstname">
+
+</div>
+<div class="form-group">
+    <label>LastName:</label>
+    <input type="text" class="form-control" id="lastname"
+    [(ngModel)]="student.lastname" name="lastname">
+
+</div>
+
+<div class="form-group">
+    <label>Email:</label>
+    <input type="text" class="form-control" id="email"
+    [(ngModel)]="student.email" name="email">
+
+</div>
+<div class="form-group">
+    <label>Contact:</label>
+    <input type="text" class="form-control" id="contact"
+    [(ngModel)]="student.contact" name="contact">
+
+</div>
+<div class="form-group">
+    <label>PassWord:</label>
+    <input type="text" class="form-control" id="PassWord"
+    [(ngModel)]="student.password" name="PassWord">
+
+</div>
+<div class="form-group">
+    <label>Gender:</label>
+    <input type="text" class="form-control" id="gender"
+    [(ngModel)]="student.gender" name="gender">
+
+</div>
+<button type="submit" class="btn-btn-success">Submit</button>
+</form>
+-->

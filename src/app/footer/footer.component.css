@@ -1,0 +1,22 @@
+
+footer {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+ }
+ footer .sec{
+     width: 30%;
+ }
+ 
+ footer .sec h2{
+     color: #fff;
+ }
+ footer .sec p{
+     color: #fff;
+ }
+ footer .sec li{
+     color: #fff;
+ }
+ 
